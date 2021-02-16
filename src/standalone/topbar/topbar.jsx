@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import Swagger from "swagger-client"
 import URL from "url"
-import "whatwg-fetch"
 import DropdownMenu from "./DropdownMenu"
 import reactFileDownload from "react-file-download"
 import YAML from "js-yaml"
@@ -346,7 +345,7 @@ export default class Topbar extends React.Component {
     }
 
     return (
-      <div>
+      <div className="swagger-editor-standalone">
         <div className="topbar">
           <div className="topbar-wrapper">
             <Link href="#">
